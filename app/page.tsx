@@ -259,7 +259,7 @@ export default function Home() {
         ========================================
       */}
       <footer className="text-center p-10 bg-gray-900 text-gray-400 mt-10">
-        <p>&copy; {new Date().getFullYear()} [Nama Anda]. Semua Hak Cipta Dilindungi.</p>
+        <p>&copy; {new Date().getFullYear()} Arrafiii. Semua Hak Cipta Dilindungi.</p>
         <p className="text-sm mt-2">Dibuat dengan ❤️ & Next.js + Tailwind CSS.</p>
       </footer>
 
