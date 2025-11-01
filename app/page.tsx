@@ -1,18 +1,17 @@
-// Menandakan ini adalah Komponen Klien untuk interaktivitas
+//  Komponen Klien untuk interaktivitas
 "use client";
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Menu, X, ArrowUpRight, GitHub, Linkedin, Mail } from 'react-feather';
-// ===============================================
+
 // MAIN COMPONENT: Home
-// ===============================================
 export default function Home() {
   const [modalId, setModalId] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Untuk menu mobile
   const [scrolled, setScrolled] = useState(false); // Untuk efek scroll di header
 
-  // Efek untuk mengubah state `scrolled` saat user menggulir halaman
+  // Efek untuk mengubah state `scrolled` saat user nge scroll web gwehj
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -121,7 +120,7 @@ export default function Home() {
           </h2>
           <div className="flex flex-col md:flex-row items-center gap-12 bg-gradient-to-br from-indigo-50 to-blue-100 p-10 rounded-2xl shadow-xl border border-blue-200 animate-fade-in animation-delay-500">
             <Image
-              src="/Aqila.jpeg" // Ganti dengan path gambar Anda
+              src="/Aqila.jpeg" 
               alt="Foto Profil Aqila Kresna Arrafi"
               width={250}
               height={250}
@@ -147,8 +146,7 @@ export default function Home() {
             Keahlian Saya
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {/* Contoh Skill Card */}
-            <SkillCard icon="/Canva.png" name="Canva" /> {/* Ganti dengan path ikon Anda */}
+            <SkillCard icon="/Canva.png" name="Canva" /> 
             <SkillCard icon="/c++.webp" name="C/C++" />
             <SkillCard icon="/KiCad.jpg" name="KiCad (otw)" />
             <SkillCard icon="/Arduino.png" name="Arduino IDE" />
@@ -199,7 +197,7 @@ export default function Home() {
               title="Pengajaran Matematika Tingkat Dasar dan Menengah"
               description="Saat ini saya sedang mengajar 10 siswa dari tingkat SD hingga SMA di Radian Edu Solution Yogyakarta."
             />
-            {/* Tambahkan lebih banyak ProjectCard di sini */}
+            {/* Buat Nambahin Project Card */}
 
           </div>
         </div>
@@ -288,7 +286,7 @@ export default function Home() {
         </button>
         <h2 className="text-4xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-500">Proyek 1: IoT Monitoring Suhu dan Kelembaban</h2>
         <Image 
-          src="/IoT TLS1.jpeg" // Ganti path
+          src="/IoT TLS1.jpeg" 
           alt="Detail Proyek 1" 
           width={900} 
           height={600} 
@@ -306,16 +304,14 @@ export default function Home() {
         </div>
         <div className="flex gap-4 mt-6">
           <a 
-            href="https://drive.google.com/file/d/1ord7J0ng1LROIFpr6Zuhm0sMOvu_X7KV/view?usp=drivesdk" // Ganti dengan link live demo
-            target="_blank" 
+            href="https://drive.google.com/file/d/1ord7J0ng1LROIFpr6Zuhm0sMOvu_X7KV/view?usp=drivesdk" 
             rel="noopener noreferrer" 
             className="inline-flex items-center bg-blue-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-md"
           >
             Lihat Live Demo <ArrowUpRight className="ml-2" size={20} />
           </a>
           <a 
-            href="https://wokwi.com/projects/442718559777338369" // Ganti dengan link GitHub
-            target="_blank" 
+            href="https://wokwi.com/projects/442718559777338369" 
             rel="noopener noreferrer" 
             className="inline-flex items-center bg-gray-800 text-white font-semibold py-3 px-8 rounded-full hover:bg-gray-900 transition duration-300 shadow-md"
           >
@@ -335,7 +331,7 @@ export default function Home() {
         </button>
         <h2 className="text-4xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-purple-500">Proyek 2: PCB Designing (Magang GMRT)</h2>
         <Image 
-          src="/PCB .jpeg" // Ganti path
+          src="/PCB .jpeg" 
           alt="Detail Proyek 2" 
           width={900} 
           height={600} 
@@ -354,7 +350,7 @@ export default function Home() {
         </div>
         <div className="flex gap-4 mt-6">
           <a 
-            href="https://drive.google.com/drive/folders/1rCzU5xTsz1v-kUhwy_7cSlPHWet1tFgn" // Ganti dengan link live demo
+            href="https://drive.google.com/drive/folders/1rCzU5xTsz1v-kUhwy_7cSlPHWet1tFgn" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="inline-flex items-center bg-blue-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-md"
@@ -362,7 +358,7 @@ export default function Home() {
             Lihat Full Design <ArrowUpRight className="ml-2" size={20} />
           </a>
           <a 
-            href="https://wokwi.com/projects/445889264147239937" // Ganti dengan link GitHub
+            href="https://wokwi.com/projects/445889264147239937" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="inline-flex items-center bg-gray-800 text-white font-semibold py-3 px-8 rounded-full hover:bg-gray-900 transition duration-300 shadow-md"
@@ -383,7 +379,7 @@ export default function Home() {
         </button>
         <h2 className="text-4xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-green-500">Proyek 3: Pengajaran Matematika Tingkat Dasar dan Menengah</h2>
         <Image 
-          src="/Mengajar.jpeg" // Ganti path
+          src="/Mengajar.jpeg" 
           alt="Detail Proyek 3" 
           width={900} 
           height={600} 
@@ -402,7 +398,7 @@ export default function Home() {
         </div>
         <div className="flex gap-4 mt-6">
           <a 
-            href="https://www.linkedin.com/in/aqila-kresna-arrafi-75344933b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" // Ganti dengan link live demo
+            href="https://www.linkedin.com/in/aqila-kresna-arrafi-75344933b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="inline-flex items-center bg-blue-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-md"
@@ -457,9 +453,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ id, setModalId, thumbnail, ti
           style={{ objectFit: 'cover' }} 
           className="group-hover:scale-110 transition-transform duration-500"
         />
-        {/* Ini adalah overlay gradien yang muncul saat hover (tempat kode terpotong) */}
+        {/* overlay gradien yang nongol saat hover (tempat kode terpotong) */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          {/* Bagian yang terpotong sebelumnya telah dihapus agar valid */}
+          {/* Bagian yang terpotong sebelumnya telah dihapus biar valid */}
         </div>
       </div>
       
